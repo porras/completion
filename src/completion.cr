@@ -60,7 +60,7 @@ module Completion
 
     def init
       if @compgen
-        fragment = @fragment as Int32
+        fragment = @fragment.as(Int32)
         begin
           completions = @listeners[@fragments[fragment-1]]
 
